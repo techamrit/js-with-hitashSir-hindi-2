@@ -24,7 +24,7 @@ const obj3 = { 5: "e", 6: "f" };
 
 // const obj4 = Object.assign({}, obj1, obj2, obj3);
 
-const obj4 = { ...obj1, ...obj2 }; // object spreen
+const obj4 = { ...obj1, ...obj2 }; // object spree
 // console.log(obj4);
 
 const users = [
