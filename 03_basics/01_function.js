@@ -42,4 +42,20 @@ function  loginUserMessage(username = "amrit"){
     }
     return `${username} just logged in`  
 }
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+
+
+function calcartitem(...num1){
+    return num1
+}
+// console.log(calcartitem(200,100,300,))
+
+const user = {
+    username:"amrit",
+    price:199
+}
+
+function handleobject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
