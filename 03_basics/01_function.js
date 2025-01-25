@@ -58,4 +58,16 @@ const user = {
 
 function handleobject(anyobject){
     console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
-}
+}     
+// handleobject(user)
+
+handleobject({username:"amit",
+    price:399
+    })
+    const myNewArray = [200,400,100,322]
+
+    function returnSeondvalue(getArray){
+        return getArray[2]
+    }
+    console.log(returnSeondvalue(myNewArray))
+    console.log(returnSeondvalue([100,200,300,400]))
