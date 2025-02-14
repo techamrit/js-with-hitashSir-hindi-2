@@ -5,4 +5,13 @@ const myNum = [1, 2, 3];
 // }, 0);
 
 const myTotal = myNum.reduce((acc, curval) => acc + curval, 0);
-console.log(myTotal);
+// console.log(myTotal);
+
+const course = [
+  { course: "java", price: 199 },
+  { course: "javascript", price: 299 },
+  { course: "css", price: 299 },
+  { course: "html", price: 499 },
+];
+const total = course.reduce((acc, item) => acc + item.price, 0);
+console.log(total);
