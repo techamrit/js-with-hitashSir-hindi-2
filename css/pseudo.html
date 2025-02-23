@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo selector</title>
+    <style>
+      .bg-color {
+        background-color: greenyellow;
+        text-align: center;
+        height: 100px;
+        width: 500px;
+        /* align-content: center; */
+      }
+      .linktag:hover {
+        background-color: aqua;
+        color: white;
+      }
+      .linktag a:active {
+        /* background-color: blue; */
+        color: green;
+      }
+      .linktag a:visited {
+        /* background-color: yellow; */
+        color: red;
+      }
+      p:lang(name) {
+        color: blueviolet;
+      }
+      input:focus {
+        color: red;
+        border: 1px solid;
+        padding: 10px;
+        background-color: yellow;
+      }
+      h1:first-child {
+        background-color: red;
+        color: yellow;
+      }
+      h1:nth-child(2n + 1) {
+        color: yellowgreen;
+        back
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-color">it is helpful in documents that require</div>
+
+    <div class="linktag">
+      <a
+        href="https://courses.chaicode.com/learn/home/chai-aur-javascript-in-hindi/section/493398/lesson/3060534?"
+        target="_blank"
+      >
+        This is link tab
+      </a>
+    </div>
+    <p>this is p tag with lang tag</p>
+    <p lang="name">this is p tag with lang tag</p>
+    <input type="text" placeholder="first name" />
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+    <h1>h1 tag is this is pseudo tag</h1>
+  </body>
+</html>
