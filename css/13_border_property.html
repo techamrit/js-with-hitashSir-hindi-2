@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example of border property</title>
+    <style>
+      div {
+        height: 50px;
+
+        width: 500px;
+        text-align: center;
+        border: 2px solid black;
+        /* border-style: none; */
+        border-style: solid;
+        border-width: medium;
+
+        border-radius: 30% 30% 30%;
+      }
+      p {
+        text-align: center;
+        border: 10px;
+        /* border-style: dashed; */
+        border-style: outset;
+        border-width: 1px;
+        border-color: green;
+      }
+      table,
+      table tr th,
+      table tr td {
+        border: 2px solid;
+        text-align: center;
+      }
+      table {
+        /* border-collapse: separate; */
+        /* border-collapse: collapse; */
+      }
+      table {
+        /* border-collapse: separate; */
+        border-spacing: 45px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border">this is an element with border</div>
+    <p>this is an element with border</p>
+    <table>
+      <tr>
+        <th>sr no.</th>
+        <th>name</th>
+        <th>class</th>
+        <th>roll no.</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>amrit</td>
+        <td>five</td>
+        <td>one</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>manish</td>
+        <td>five</td>
+        <td>two</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>vivek</td>
+        <td>five</td>
+        <td>three</td>
+      </tr>
+    </table>
+  </body>
+</html>
