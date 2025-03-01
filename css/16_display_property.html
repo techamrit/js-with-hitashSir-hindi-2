@@ -3,20 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice</title>
+    <title>display</title>
     <style>
-      div {
-        background-image: url("burger.jpg");
-        background-size: cover;
-        height: 500px;
-        width: 700px;
+      h1 {
+        background-color: red;
+      }
+      span {
+        background-color: aqua;
+      }
+      a {
+        background-color: green;
+      }
+      h1 {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline;
+        font-size: large;
+        /* border: 2px solid; */
+      }
+      #displayinline {
+        display: inline;
+      }
+      #display-inline-block li {
+        display: inline-block;
+      }
+      #display-block {
+        display: block;
+      }
+      .display-flex {
+        display: flex;
+      }
+      .display-flex div {
+        padding: 10px;
+        background-color: white;
+        border: 10px solid lightgreen;
       }
     </style>
   </head>
   <body>
-    <div>
-      myname is amrit<br />my father name is vikram singh <br />my mother name
-      is anita
+    <!-- <h1>This is a heading Tag</h1>
+    <span>this is a span </span>
+    <a href="This is link"> this is a link</a> -->
+    <h1>week days inline</h1>
+    <!-- Exampole display- inling  -->
+    <ul id="displayinline">
+      <li>mon</li>
+      <li>tus</li>
+      <li>wed</li>
+      <li>thu</li>
+      <li>fri</li>
+      <li>sat</li>
+      <li>sun</li>
+    </ul>
+    <!-- example of inline-block -->
+    <h2>week days inline block</h2>
+    <ul id="display-inline-block">
+      <li>mon</li>
+      <li>tus</li>
+      <li>wed</li>
+      <li>thu</li>
+      <li>fri</li>
+      <li>sat</li>
+      <li>sun</li>
+      <li>mon</li>
+      <li>tus</li>
+      <li>wed</li>
+      <li>thu</li>
+      <li>fri</li>
+      <li>sat</li>
+      <li>sun</li>
+      <li>mon</li>
+      <li>tus</li>
+      <li>wed</li>
+      <li>thu</li>
+      <li>fri</li>
+      <li>sat</li>
+      <li>sun</li>
+    </ul>
+    <!-- <ul id="display-block">
+      <li>mon</li>
+      <li>tus</li>
+      <li>wed</li>
+      <li>thu</li>
+      <li>fri</li>
+      <li>sat</li>
+      <li>sun</li>
+    </ul> -->
+    <div id="display-block">
+      <span>sunday</span>
+      <span>monday</span>
+      <span>tuesday</span>
+      <span>wednesday</span>
+      <span>thrusday</span>
+      <span>friday</span>
+      <span>saturday</span>
+    </div>
+    <br /><br />
+    <br />
+
+    <!-- Example of display : none property -->
+    <div>this is div visible</div>
+    <div style="display: none">this is div hidden</div>
+
+    <br />
+    <!-- example of display flex -->
+    <div class="display-flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
     </div>
   </body>
 </html>
