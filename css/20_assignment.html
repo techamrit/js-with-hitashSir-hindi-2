@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation</title>
+    <style>
+      .navigation {
+        margin-top: 1000px;
+        width: 50vh;
+        height: 40px;
+        border: 1px solid;
+        box-sizing: border-box;
+        background-color: lightgrey;
+        overflow: hidden;
+        position: sticky;
+        top: 10px;
+        /* float: left; */
+      }
+      .uls {
+        height: 5vh;
+        display: flex;
+        /* text-align: center; */
+        font-size: 20px;
+        list-style-type: none;
+        padding: 7px;
+        margin-top: 7px;
+
+        color: white;
+      }
+      .uls li:first-child {
+        background-color: darkgrey;
+        color: white;
+        overflow: hidden;
+      }
+      li {
+        /* padding-top: 10px; */
+        padding-left: 10px;
+        color: blue;
+        /* border: 1px; */
+        /* border-top: none;
+        border-left: none;
+        border-bottom: none; */
+      }
+
+      .hnav {
+        float: right;
+        height: 30vh;
+        width: 200px;
+        border: 1px solid;
+        background-color: lightgray;
+        margin-top: 1000px;
+      }
+      .hul {
+        list-style: none;
+      }
+      .hul li :first-child {
+        background-color: yellow;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul class="uls">
+        <li>home</li>
+        <li>java</li>
+        <li>html</li>
+        <li>css</li>
+      </ul>
+    </div>
+    <div class="hnav">
+      <ul class="hul">
+        <li style="background-color: yellow">home</li>
+        <li>java</li>
+        <li>html</li>
+        <li>css</li>
+      </ul>
+    </div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rectangle</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+      }
+      .lefttop {
+        background-color: red;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+      }
+      .righttop {
+        background-color: blue;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+      }
+      .bottomleft {
+        background-color: green;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+      }
+      .bottomright {
+        background-color: yellow;
+        /* bottom: 10px; */
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+        /* float: right; */
+        /* clear: left; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lefttop"></div>
+    <div class="righttop"></div>
+    <div class="bottomleft"></div>
+    <div class="bottomright"></div>
+  </body>
+</html>
