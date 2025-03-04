@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visibility</title>
+    <style>
+      h1 {
+        visibility: visible;
+      }
+      h2 {
+        visibility: hidden;
+      }
+      div {
+        margin: 0 auto;
+        background-color: green;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this heading tag is with visibility:visible property value.</h1>
+    <h2>this heading tag is with visibility:hidden property value.</h2>
+
+    <div id="div1">this is division that willl get hide and show</div>
+    <button onclick="hidd()">hidd and visible</button>
+    <p>the above div will hide</p>
+  </body>
+  <script>
+    function hidd() {
+      if (document.getElementById("div1").style.visibility == "visible") {
+        document.getElementById("div1").style.visibility = "hidden";
+      } else {
+        document.getElementById("div1").style.visibility = "visible";
+      }
+    }
+  </script>
+</html>
