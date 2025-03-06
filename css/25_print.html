@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example of print</title>
+    <style>
+      div {
+        font-size: larger;
+        /* page-break-before: auto; */
+        /* page-break-inside: auto; */
+        page-break-after: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>this is example of print tag</h1>
+      <h3>this is learn vern platform</h3>
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in incidunt
+      assumenda praesentium quibusdam at. Eum iste molestias fugit eos quasi
+      pariatur sequi voluptate, odio velit, quisquam laudantium totam quo.
+    </div>
+    <button onclick="printfunction()">print</button>
+  </body>
+  <script>
+    function printfunction() {
+      window.print();
+    }
+  </script>
+</html>
