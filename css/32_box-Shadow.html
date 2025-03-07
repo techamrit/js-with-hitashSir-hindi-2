@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example of box Shadow</title>
+    <style>
+      div {
+        height: 200px;
+
+        width: 200px;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .hvb {
+        box-shadow: 5px 5px 5px;
+      }
+      .hvbs {
+        box-shadow: 5px 5px 5px 5px;
+      }
+      .hvbsc {
+        box-shadow: 5px 5px 5px 5px greenyellow;
+      }
+      .hvbsc-inset {
+        box-shadow: 5px 5px 5px 5px green inset;
+      }
+      .hvbsc-initial {
+        box-shadow: 5px 5px 5px 5px red initial;
+      }
+      .glow-effect {
+        background-color: 0 0 0.1em cyan;
+      }
+      .multiple-shadow {
+        font-size: 20px;
+        text-shadow: -3px -3px 3px green, 3px 3px 3px blue;
+      }
+      p {
+        text-align: center;
+      }
+      .glow-effect {
+        font-size: 30px;
+        background-color: black;
+        text-shadow: 0 0 0.1em cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>box shadow hvb</h1>
+    <div class="hvb">hvb</div>
+    <h1>box shadow hvbs</h1>
+    <div class="hvbs">hvbc</div>
+    <h1>box shadow hvbsc</h1>
+    <div class="hvbsc">hvbsc</div>
+    <h1>box shadow inset</h1>
+    <div class="hvbsc-inset">hvbsc-inset</div>
+    <h1>box shadow initial</h1>
+    <div class="hvbsc-initial">hvbsc-initial</div>
+    <h1>box shadow glow effect</h1>
+    <div class="glow-effect">glow effect</div>
+
+    <h1>text-shadow</h1>
+    <p style="text-shadow: 3px 3px RED">TEXT SHADOW</p>
+    <p style="text-shadow: 3px 3px 3px violet">TEXT SHADOW</p>
+
+    <p class="multiple-shadow">TEXT SHADOW multiple color</p>
+    <p class="glow-effect">glow-effect</p>
+  </body>
+</html>
