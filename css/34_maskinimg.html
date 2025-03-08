@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>masking</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        /* position: relative;
+        mix-blend-mode: screen;
+        background-image: url(heart.png); */
+        -webkit-mask-image: -webkit-gradient(
+          linear,
+          right top,
+          right bottom,
+          form(rgba(0, 0, 0, 0)),
+          to (rgba(0, 0, 0, 0.9))
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h2>this is an example of mask img</h2>
+    <h2>original image</h2>
+    <img src="veg club sandwich.jpeg" alt="" />
+    <!-- <img src="veg club sandwich.jpeg" alt="" />
+    <h3>using masking effect</h3>
+    <img id="mask1" src="burger.jpg" alt="" /> -->
+  </body>
+</html>
