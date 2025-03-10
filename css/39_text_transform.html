@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-transform</title>
+  </head>
+  <body>
+    <h1>this is example of text-transform:</h1>
+    <h2>this is text-transform: capitalize</h2>
+    <p style="text-transform: capitalize">
+      this is paragraph converted to capitalize
+    </p>
+    <h2>this is text-transform: uppercase</h2>
+    <p style="text-transform: uppercase">
+      this is paragraph converted to lowercase
+    </p>
+    <h2>this is text-transform: lowercase</h2>
+    <p style="text-transform: lowercase">
+      THIS IS PARAGRAPH CONVERTED TO LOWERCASE
+    </p>
+    <h1>this is text-transform: none</h1>
+    <p style="text-transform: none">this is paragraph convERTed tO nONe</p>
+
+    <style>
+      div {
+        width: 170px;
+        border: 1px solid #212121;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      div:hover {
+        overflow: visible;
+      }
+    </style>
+    <h1>this is example of text-overflow</h1>
+
+    <div style="text-overflow: clip">
+      this is long text that is going out of the div width.
+    </div>
+    <div style="text-overflow: ellipsis">
+      this is very long text that is going out of the div width.
+    </div>
+    <div style="text-overflow: string">
+      this is very long text that is going out of the div width.
+    </div>
+
+    <style>
+      #abc,
+      #def {
+        width: 150px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        white-space: wrap;
+      }
+      #abc {
+        writing-mode: vertical-rl;
+
+        text-orientation: mixed;
+      }
+      #def {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+      }
+    </style>
+    <h1>this is example of text oriented</h1>
+    <h2>this is mixed</h2>
+    <div id="abc">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi. Hic
+      commodi possimus, cumque dolore provident voluptate fuga sequi, nobis
+      ipsum itaque sed beatae sit blanditiis necessitatibus maxime id earum!
+    </div>
+    <h2>this is upright</h2>
+    <div id="def">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi. Hic
+      commodi possimus, cumque dolore provident voluptate fuga sequi, nobis
+      ipsum itaque sed beatae sit blanditiis necessitatibus maxime id earum!
+    </div>
+  </body>
+</html>

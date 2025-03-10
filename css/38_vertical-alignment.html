@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vertical alignment</title>
+    <style>
+      table,
+      table tr th,
+      table tr td {
+        border: 1px solid salmon;
+        border-collapse: collapse;
+      }
+      table {
+        /* width: 30%; */
+      }
+      /* table tr th,
+      table tr td { */
+      /* white-space: normal; */
+      /* white-space: nowrap; */
+      /* white-space: pre; */
+      /* white-space: pre-line; */
+      /* white-space: pre-wrap; */
+      /* white-space: wrap; */
+      /* }  */
+
+      table tr th,
+      table tr td {
+        /* word-break: break-word; */
+        /* word-break: break-all; */
+        /* word-break: normal; */
+        /* word-wrap: normal; */
+        /* word-wrap: break-word; */
+        word-wrap: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img src="burger.jpg" width="50px" height="50px" alt="" />
+      this is the content with no vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: baseline"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with baseline vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: bottom"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with bottom vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: middle"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with middle vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: text-bottom"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with text-bottom vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: text-top"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with text-top vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: top"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with top vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: 10px"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with px vertical alignment
+    </p>
+    <p>
+      <img
+        style="vertical-align: 10%"
+        src="burger.jpg"
+        width="50px"
+        height="50px"
+        alt=""
+      />
+      this is the content with (%) vertical alignment
+    </p>
+
+    <p>this is example of svb : 2 <span style="vertical-align: sub">a</span></p>
+    <p>
+      this is example of super : 2 <span style="vertical-align: super">a</span>
+    </p>
+
+    <h2>white space property</h2>
+    <table>
+      <tr>
+        <th>employe id</th>
+        <th>first name</th>
+        <th>last name</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>amrit</td>
+        <td>amritaaaamrithnamrith</td>
+        <td>amrit</td>
+      </tr>
+      <tr>
+        <td>pal</td>
+        <td>pal</td>
+        <td>pal</td>
+      </tr>
+    </table>
+    <h1>this is word wrap</h1>
+  </body>
+</html>
