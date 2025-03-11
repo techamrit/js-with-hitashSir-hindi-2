@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify, text decoration and Text-align</title>
+    <style>
+      .fex-center {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        background-color: orangered;
+      }
+      .div2 {
+        height: 50px;
+        width: 50px;
+        border: 1px solid rebeccapurple;
+        margin: 5px;
+        padding: 5px;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: gold;
+        text-align: center;
+        /* justify-content: flex-start; */
+      }
+      .flex-start {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        background-color: orangered;
+      }
+      .flex-end {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-end;
+        background-color: orangered;
+      }
+      .flex-around {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        background-color: orangered;
+      }
+
+      .flex-evenly {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: orangered;
+      }
+      .flex-btween {
+        height: 80px;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>justify- content:center</h2>
+    <div class="fex-center">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+    <h2>justify- content:center</h2>
+    <div class="flex-start">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+    <h2>justify- content:flex end</h2>
+    <div class="flex-end">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+    <h2>justify- content:flex around</h2>
+    <div class="flex-around">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+    <h2>justify- content:space evenly</h2>
+    <div class="flex-evenly">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+    <h2>justify- content:space between</h2>
+    <div class="flex-btween">
+      <div class="div2">a</div>
+      <div class="div2">b</div>
+      <div class="div2">c</div>
+      <div class="div2">d</div>
+    </div>
+  </body>
+</html>
