@@ -95,3 +95,15 @@ form.addEventListener("submit", function (e) {
   }
 });
 ```
+
+## project 3 sollution code
+
+```javascript
+const clock = document.getElementById("clock");
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString())
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
