@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html event</title>
+  </head>
+  <body style="background-color: #414141">
+    <h2>amazing image</h2>
+    <div>
+      <ul id="images">
+        <li style="color: aliceblue">
+          <img
+            id="gnas"
+            width="200px"
+            src="https://images.pexels.com/photos/28122338/pexels-photo-28122338/free-photo-of-dharavi-cha-sukhakarta-2024.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li style="color: aliceblue">
+          <img
+            id="ice"
+            width="200px"
+            src="https://images.pexels.com/photos/31499308/pexels-photo-31499308/free-photo-of-elegant-dessert-dining-in-modern-cafe-setting.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li style="color: aliceblue">
+          <img
+            id="lance"
+            width="200px"
+            src="https://images.pexels.com/photos/31295906/pexels-photo-31295906/free-photo-of-chic-minimalist-flat-lay-with-beauty-essentials.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li style="color: aliceblue">
+          <img
+            id="rabit"
+            width="200px"
+            src="https://images.pexels.com/photos/31500099/pexels-photo-31500099.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById("rabit").onclick = function () {
+    //   alert("rabit clicked");
+    // };
+
+    //attachEvent() ya early time me kam ata tha
+    // jQuery -  on
+
+    //type , timestamp, defaultPrevented,
+    // target, toElement, srcElement,currentTarget,
+    //clientX,clienty,screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    //event propegation event 1bubling 2captchering
+
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("cslsicsked inside the ul");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("rabit").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("rabit click");
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("lance").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("lance clicked");
+    //   },
+    //   false
+    // );
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+        }
+        console.log(e.target.id);
+
+        console.log(e.target.parentNode);
+      },
+      false
+    );
+  </script>
+</html>
