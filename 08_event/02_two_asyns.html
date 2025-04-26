@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>asyns</title>
+  </head>
+  <body>
+    <h1>Chail aur code</h1>
+    <button id="btn1">stop me</button>
+  </body>
+  <script>
+    // setTimeout(function(){
+    //     console.log("amrit");
+
+    // },2000)
+    // const sayAmrit = function () {
+    //   console.log("amrit");
+    // };
+    const changText = function () {
+      document.querySelector("h1").innerText = "best JS Series   ";
+    };
+    const changMe = setTimeout(changText, 2000);
+
+    document.querySelector("#btn1").addEventListener("click", function () {
+      clearTimeout(changMe);
+      console.log("stop me clicked");
+      // sayAmrit();
+      // clearTimeout(sayAmrit);
+      // setTimeout(sayAmrit, 2000);
+    });
+  </script>
+</html>
