@@ -11,13 +11,14 @@
     <button id="btn2">stop me</button>
   </body>
   <script>
+    let intervalId;
     const sayDate = function (str) {
       document.querySelector("h1").innerText = "this is js " + str + Date.now();
     };
     document.querySelector("#btn1").addEventListener("click", function () {
       // setInterval(sayDate, 1000, "amrit");
+      intervalId = setInterval(sayDate, 1000, "hi");
     });
-    const intervalId = setInterval(sayDate, 1000, "hi");
 
     document.querySelector("#btn2").addEventListener("click", function () {
       clearInterval(intervalId);

@@ -205,3 +205,90 @@ function newGame() {
   });
 }
 ```
+
+## project 5 solution
+
+```javascript
+const insert = document.getElementById("insert");
+window.addEventListener("keydown", (e) => {
+  insert.innerHTML = `
+  <div class="color">
+  <table>
+  <tr>
+  <th>key</th>
+  <th>keycode</th>
+  <th>code</th>
+  </tr>
+  <tr>
+  <td>${e.key === " " ? "space" : e.key} </td>
+  <td>${e.keyCode}</td>
+  <td>${e.code}</td>
+  </tr>
+  </table>
+  </div>
+  `;
+});
+```
+
+## project 6 solution
+
+```javascript
+//generate a random color
+
+const randomColor = function () {
+  const hex = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+const starColorChanging = function () {
+  if (!intervalId) {
+    intervalId = setInterval(function () {
+      document.body.style.backgroundColor = randomColor();
+    }, 1000);
+  }
+};
+
+const stopColorChanging = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+// console.log(randomColor())
+document.querySelector("#start").addEventListener("click", starColorChanging);
+document.querySelector("#stop").addEventListener("click", stopColorChanging);
+```
+
+### projec 6 solution
+
+```javascript
+// fenerate a random color
+
+const randomColor = function () {
+  const hex = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+const startColorChange = function () {
+  if (!intervalId) {
+    intervalId = setInterval(changeColor, 1000);
+  }
+  function changeColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+
+const stopColorChange = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+document.querySelector("#start").addEventListener("click", startColorChange);
+document.querySelector("#stop").addEventListener("click", stopColorChange);
+```
